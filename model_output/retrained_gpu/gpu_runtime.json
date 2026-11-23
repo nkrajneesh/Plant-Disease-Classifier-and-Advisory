@@ -1,0 +1,13 @@
+{
+  "tensorflow": "2.10.1",
+  "gpu_name": "NVIDIA GeForce GTX 1650 via DirectML adapter 0",
+  "gpu_devices": [
+    "/physical_device:GPU:0",
+    "/physical_device:GPU:1"
+  ],
+  "gpu_probe_tensor_device": "/job:localhost/replica:0/task:0/device:GPU:0",
+  "gpu_probe_result": 134217728.0,
+  "training_device": "/GPU:0",
+  "cpu_training_fallback": false,
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]"
+}

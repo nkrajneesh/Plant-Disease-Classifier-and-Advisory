@@ -1,0 +1,7 @@
+{
+  "not_leaf_probability_threshold": 0.01,
+  "minimum_leaf_confidence": 0.0,
+  "validation_leaf_acceptance_sensitivity": 0.9996222138269739,
+  "validation_non_leaf_rejection_specificity": 1.0,
+  "selection_rule": "maximize non-leaf rejection while retaining >=98% validation leaf acceptance"
+}

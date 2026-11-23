@@ -1,0 +1,33 @@
+name: crop_disease_app
+description: Offline crop leaf disease demonstration app.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.2.4
+  image: ^4.12.0
+  tflite_flutter: ^0.12.1
+  url_launcher: ^6.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/icon/logo.jpeg
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: assets/icon/logo.jpeg
+  min_sdk_android: 26

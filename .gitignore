@@ -1,0 +1,23 @@
+# Rebuildable machine-specific environments and caches
+/.crop_training_venv/
+/.tf_directml_venv/
+/.venv/
+/venv/
+__pycache__/
+*.py[cod]
+
+# Rebuildable Flutter/Android output
+/crop_disease_app/.dart_tool/
+/crop_disease_app/build/
+/crop_disease_app/.flutter-plugins-dependencies
+/crop_disease_app/android/.gradle/
+
+/model_output/.keras_cache/
+/model_output/resnet50_feature_cache_160/
+/model_output/resnet50_rgb_feature_cache_160/
+
+# Temporary visual QA output and OS state
+/tmp/
+/.Rhistory
+Thumbs.db
+Desktop.ini

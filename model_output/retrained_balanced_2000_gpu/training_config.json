@@ -1,0 +1,60 @@
+{
+  "seed": 42,
+  "input_size": [
+    224,
+    224
+  ],
+  "resnet_internal_size": [
+    160,
+    160
+  ],
+  "classes": [
+    "Apple___Apple_scab",
+    "Apple___Black_rot",
+    "Apple___Cedar_apple_rust",
+    "Apple___healthy",
+    "Corn_(maize)___Common_rust_",
+    "Corn_(maize)___Northern_Leaf_Blight",
+    "Corn_(maize)___healthy",
+    "Potato___Early_blight",
+    "Potato___Late_blight",
+    "Potato___healthy",
+    "Tomato___Bacterial_spot",
+    "Tomato___Early_blight",
+    "Tomato___Late_blight",
+    "Tomato___Leaf_Mold",
+    "Tomato___Target_Spot",
+    "Tomato___healthy",
+    "__not_a_supported_leaf__"
+  ],
+  "materialized_leaf_training_images_per_class": 2000,
+  "materialized_leaf_training_total": 32000,
+  "leaf_augmentation_source": "raw images referenced only by the training rows in data_split.csv",
+  "validation_test_images_augmented": false,
+  "not_leaf_original_training_pool": 8049,
+  "training_images_per_class_per_epoch": 2000,
+  "balanced_examples_per_epoch": 34000,
+  "head_epochs_max": 8,
+  "fine_tune_epochs_max": 10,
+  "head_batch_size": 16,
+  "fine_tune_batch_size": 8,
+  "head_learning_rate": 0.001,
+  "fine_tune_learning_rate": 1e-05,
+  "unfrozen_resnet_block": "conv5_x only; all BatchNormalization layers frozen",
+  "trainable_variable_devices": [
+    "/job:localhost/replica:0/task:0/device:GPU:0"
+  ],
+  "gpu": {
+    "tensorflow": "2.10.1",
+    "gpu_name": "NVIDIA GeForce GTX 1650 via DirectML adapter 0",
+    "gpu_devices": [
+      "/physical_device:GPU:0",
+      "/physical_device:GPU:1"
+    ],
+    "gpu_probe_tensor_device": "/job:localhost/replica:0/task:0/device:GPU:0",
+    "gpu_probe_result": 134217728.0,
+    "training_device": "/GPU:0",
+    "cpu_training_fallback": false,
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]"
+  }
+}

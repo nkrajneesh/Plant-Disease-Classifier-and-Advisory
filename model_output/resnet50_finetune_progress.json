@@ -1,0 +1,19 @@
+{
+  "completed_epochs": 4,
+  "config": {
+    "internal_size": [
+      160,
+      160
+    ],
+    "last_layers": 30,
+    "learning_rate": 1e-05,
+    "epochs": 4
+  },
+  "last_logs": {
+    "accuracy": 0.9791110157966614,
+    "loss": 0.05507881939411163,
+    "val_accuracy": 0.982244074344635,
+    "val_loss": 0.05895577743649483,
+    "learning_rate": 9.999999747378752e-06
+  }
+}

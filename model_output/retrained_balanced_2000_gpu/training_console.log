@@ -1,0 +1,71 @@
+Verified GPU matrix operation on /job:localhost/replica:0/task:0/device:GPU:0
+Reusing verified 8-epoch frozen-head training from model_output\retrained_balanced_2000_gpu_incomplete_single_finetune_epoch
+Starting finetune: GPU=/GPU:0, examples/epoch=34000, steps/epoch=4250, batch=8, max_epochs=10
+Epoch 1/10
+
+Epoch 1: val_loss improved from inf to 0.04054, saving model to D:\projects\final project DA 1st sem\model_output\retrained_balanced_2000_gpu\finetune_best.weights.h5
+4250/4250 - 355s - loss: 0.0397 - accuracy: 0.9865 - val_loss: 0.0405 - val_accuracy: 0.9889 - lr: 1.0000e-05 - 355s/epoch - 84ms/step
+Epoch 2/10
+
+Epoch 2: val_loss did not improve from 0.04054
+4250/4250 - 352s - loss: 0.0209 - accuracy: 0.9932 - val_loss: 0.0450 - val_accuracy: 0.9880 - lr: 1.0000e-05 - 352s/epoch - 83ms/step
+Epoch 3/10
+
+Epoch 3: val_loss did not improve from 0.04054
+
+Epoch 3: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-06.
+4250/4250 - 354s - loss: 0.0129 - accuracy: 0.9960 - val_loss: 0.0517 - val_accuracy: 0.9882 - lr: 1.0000e-05 - 354s/epoch - 83ms/step
+Epoch 4/10
+
+Epoch 4: val_loss did not improve from 0.04054
+Restoring model weights from the end of the best epoch: 1.
+4250/4250 - 353s - loss: 0.0052 - accuracy: 0.9983 - val_loss: 0.0493 - val_accuracy: 0.9921 - lr: 5.0000e-06 - 353s/epoch - 83ms/step
+Epoch 4: early stopping
+Finished finetune in 23.6 minutes.
+Selected stage: ResNet50 conv5_x fine-tuned validation: {'loss': 0.04054076597094536, 'accuracy': 0.9889352917671204}
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 53). These functions will not be directly callable after loading.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Training and held-out evaluation finished.
+{
+  "selected_stage": "ResNet50 conv5_x fine-tuned",
+  "validation_loss": 0.04054076597094536,
+  "validation_accuracy": 0.9889352917671204,
+  "combined_test_examples": 6572,
+  "combined_17_way_accuracy": 0.9951308581862447,
+  "end_to_end_accuracy_after_gate": 0.9951308581862447,
+  "leaf_test_examples": 2647,
+  "nonleaf_test_examples": 3925,
+  "forced_16_disease_class_accuracy_on_leaf_test": 0.9890442009822441,
+  "system_leaf_correct_and_accepted_rate": 0.9890442009822441,
+  "test_macro_precision_17_way": 0.9890741860204311,
+  "test_macro_recall_17_way": 0.9897650644821452,
+  "test_macro_f1_17_way": 0.9892566030907166,
+  "invalid_image_gate": {
+    "positive_definition": "supported crop leaf accepted by the gate",
+    "negative_definition": "non-leaf input correctly rejected by the gate",
+    "TP_leaf_accepted": 2647,
+    "FN_leaf_rejected": 0,
+    "FP_nonleaf_accepted": 1,
+    "TN_nonleaf_rejected": 3924,
+    "leaf_acceptance_recall": 1.0,
+    "nonleaf_rejection_specificity": 0.9997452229299363,
+    "gate_precision_for_accepted_leaf": 0.9996223564954683,
+    "gate_f1": 0.9998111425873466,
+    "gate_balanced_accuracy": 0.9998726114649681,
+    "gate_confusion_matrix_labels": [
+      "not supported leaf",
+      "supported leaf"
+    ],
+    "gate_confusion_matrix": [
+      [
+        3924,
+        1
+      ],
+      [
+        0,
+        2647
+      ]
+    ]
+  }
+}
+Artifacts: D:\projects\final project DA 1st sem\model_output\retrained_balanced_2000_gpu

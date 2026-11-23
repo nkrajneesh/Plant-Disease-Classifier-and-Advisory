@@ -1,0 +1,116 @@
+{
+  "target_images_per_leaf_class": 2000,
+  "leaf_class_count": 16,
+  "total_leaf_training_images": 32000,
+  "image_size": [
+    224,
+    224
+  ],
+  "seed": 42,
+  "source": "raw images referenced by the train rows in preprocessed/data_split.csv",
+  "validation_and_test_augmented": false,
+  "augmentation": [
+    "horizontal/vertical flips",
+    "random 0/90/180/270-degree rotations",
+    "brightness factor 0.88 to 1.12",
+    "contrast factor 0.88 to 1.12"
+  ],
+  "classes": {
+    "Apple___Apple_scab": {
+      "raw_dataset_images": 630,
+      "original_training_images": 442,
+      "generated_augmented_images": 1558,
+      "training_images_after_augmentation": 2000
+    },
+    "Apple___Black_rot": {
+      "raw_dataset_images": 621,
+      "original_training_images": 435,
+      "generated_augmented_images": 1565,
+      "training_images_after_augmentation": 2000
+    },
+    "Apple___Cedar_apple_rust": {
+      "raw_dataset_images": 275,
+      "original_training_images": 193,
+      "generated_augmented_images": 1807,
+      "training_images_after_augmentation": 2000
+    },
+    "Apple___healthy": {
+      "raw_dataset_images": 1645,
+      "original_training_images": 1151,
+      "generated_augmented_images": 849,
+      "training_images_after_augmentation": 2000
+    },
+    "Corn_(maize)___Common_rust_": {
+      "raw_dataset_images": 1192,
+      "original_training_images": 834,
+      "generated_augmented_images": 1166,
+      "training_images_after_augmentation": 2000
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+      "raw_dataset_images": 985,
+      "original_training_images": 689,
+      "generated_augmented_images": 1311,
+      "training_images_after_augmentation": 2000
+    },
+    "Corn_(maize)___healthy": {
+      "raw_dataset_images": 1162,
+      "original_training_images": 814,
+      "generated_augmented_images": 1186,
+      "training_images_after_augmentation": 2000
+    },
+    "Potato___Early_blight": {
+      "raw_dataset_images": 1000,
+      "original_training_images": 700,
+      "generated_augmented_images": 1300,
+      "training_images_after_augmentation": 2000
+    },
+    "Potato___Late_blight": {
+      "raw_dataset_images": 1000,
+      "original_training_images": 700,
+      "generated_augmented_images": 1300,
+      "training_images_after_augmentation": 2000
+    },
+    "Potato___healthy": {
+      "raw_dataset_images": 152,
+      "original_training_images": 106,
+      "generated_augmented_images": 1894,
+      "training_images_after_augmentation": 2000
+    },
+    "Tomato___Bacterial_spot": {
+      "raw_dataset_images": 2127,
+      "original_training_images": 1489,
+      "generated_augmented_images": 511,
+      "training_images_after_augmentation": 2000
+    },
+    "Tomato___Early_blight": {
+      "raw_dataset_images": 1000,
+      "original_training_images": 700,
+      "generated_augmented_images": 1300,
+      "training_images_after_augmentation": 2000
+    },
+    "Tomato___Late_blight": {
+      "raw_dataset_images": 1909,
+      "original_training_images": 1337,
+      "generated_augmented_images": 663,
+      "training_images_after_augmentation": 2000
+    },
+    "Tomato___Leaf_Mold": {
+      "raw_dataset_images": 952,
+      "original_training_images": 666,
+      "generated_augmented_images": 1334,
+      "training_images_after_augmentation": 2000
+    },
+    "Tomato___Target_Spot": {
+      "raw_dataset_images": 1404,
+      "original_training_images": 982,
+      "generated_augmented_images": 1018,
+      "training_images_after_augmentation": 2000
+    },
+    "Tomato___healthy": {
+      "raw_dataset_images": 1591,
+      "original_training_images": 1113,
+      "generated_augmented_images": 887,
+      "training_images_after_augmentation": 2000
+    }
+  }
+}

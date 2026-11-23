@@ -1,0 +1,1 @@
+This folder contains the retrained ResNet50 TensorFlow Lite model, its 17 output labels (16 crop leaf classes plus the invalid-image class), and matching gate thresholds. Keep these files together when building the Android app.

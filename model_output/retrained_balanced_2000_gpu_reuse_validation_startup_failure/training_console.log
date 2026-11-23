@@ -1,0 +1,10 @@
+Verified GPU matrix operation on /job:localhost/replica:0/task:0/device:GPU:0
+Reusing verified 8-epoch frozen-head training from model_output\retrained_balanced_2000_gpu_incomplete_single_finetune_epoch
+Traceback (most recent call last):
+  File "D:\projects\final project DA 1st sem\retrain_crop_disease_balanced2000_gpu.py", line 495, in <module>
+    head_validation = model.evaluate(validation_ds, verbose=0, return_dict=True)
+  File "D:\projects\final project DA 1st sem\.tf_directml_venv\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\projects\final project DA 1st sem\.tf_directml_venv\lib\site-packages\keras\engine\training.py", line 3618, in _assert_compile_was_called
+    raise RuntimeError(
+RuntimeError: You must compile your model before training/testing. Use `model.compile(optimizer, loss)`.

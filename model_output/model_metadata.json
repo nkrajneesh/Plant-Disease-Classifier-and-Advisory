@@ -1,0 +1,90 @@
+{
+  "model_name": "ResNet50 crop disease classifier",
+  "format": "TensorFlow Lite",
+  "input_shape": [
+    1,
+    224,
+    224,
+    3
+  ],
+  "input_dtype": "float32",
+  "resnet_internal_size": [
+    160,
+    160
+  ],
+  "selected_stage": "RGB fine-tuned",
+  "fine_tuning": {
+    "enabled": true,
+    "epochs": 4,
+    "last_layers": 30,
+    "learning_rate": 1e-05
+  },
+  "output_shape": [
+    1,
+    16
+  ],
+  "output_semantics": "softmax probabilities aligned with class_names.json",
+  "class_names": [
+    "Apple___Apple_scab",
+    "Apple___Black_rot",
+    "Apple___Cedar_apple_rust",
+    "Apple___healthy",
+    "Corn_(maize)___Common_rust_",
+    "Corn_(maize)___Northern_Leaf_Blight",
+    "Corn_(maize)___healthy",
+    "Potato___Early_blight",
+    "Potato___Late_blight",
+    "Potato___healthy",
+    "Tomato___Bacterial_spot",
+    "Tomato___Early_blight",
+    "Tomato___Late_blight",
+    "Tomato___Leaf_Mold",
+    "Tomato___Target_Spot",
+    "Tomato___healthy"
+  ],
+  "preprocessing": {
+    "orientation": "EXIF corrected",
+    "color": "RGB preserved",
+    "resize": [
+      224,
+      224
+    ],
+    "resize_interpolation": "bilinear",
+    "background_removal": "disabled",
+    "grayscale": "disabled",
+    "gaussian_filter": "disabled",
+    "model_normalization": "ResNet50 caffe preprocessing: RGB to BGR and subtract [103.939, 116.779, 123.68]"
+  },
+  "training_augmentation": [
+    "random horizontal and vertical flips",
+    "random 90-degree rotations",
+    "mild brightness and contrast changes"
+  ],
+  "train_validation_test_split": {
+    "train_fraction": 0.7,
+    "validation_fraction": 0.15,
+    "test_fraction": 0.15,
+    "seed": 42
+  },
+  "test_metrics": [
+    {
+      "model": "ResNet50_RGB_FineTuned",
+      "test_loss": 0.0365544409,
+      "test_accuracy": 0.9886664152,
+      "accuracy": 0.9886664148,
+      "macro_precision": 0.9865769789,
+      "macro_recall": 0.9889164268,
+      "macro_f1": 0.9875935928
+    },
+    {
+      "model": "ResNet50_RGB_Frozen",
+      "test_loss": 0.0486455597,
+      "test_accuracy": 0.9818662405,
+      "accuracy": 0.9818662637,
+      "macro_precision": 0.9801075476,
+      "macro_recall": 0.9795408405,
+      "macro_f1": 0.979595528
+    }
+  ],
+  "warning": "Image classification output is advisory and is not a confirmed field diagnosis."
+}

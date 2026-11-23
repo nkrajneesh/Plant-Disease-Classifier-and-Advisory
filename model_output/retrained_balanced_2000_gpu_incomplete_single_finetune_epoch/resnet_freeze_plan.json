@@ -1,0 +1,32 @@
+{
+  "frozen": "ResNet50 stem, conv2_x, conv3_x and conv4_x",
+  "unfrozen": "ResNet50 conv5_x and disease head",
+  "batch_normalization": "Frozen during both stages",
+  "unfrozen_backbone_layer_names": [
+    "conv5_block1_1_conv",
+    "conv5_block1_1_relu",
+    "conv5_block1_2_conv",
+    "conv5_block1_2_relu",
+    "conv5_block1_0_conv",
+    "conv5_block1_3_conv",
+    "conv5_block1_add",
+    "conv5_block1_out",
+    "conv5_block2_1_conv",
+    "conv5_block2_1_relu",
+    "conv5_block2_2_conv",
+    "conv5_block2_2_relu",
+    "conv5_block2_3_conv",
+    "conv5_block2_add",
+    "conv5_block2_out",
+    "conv5_block3_1_conv",
+    "conv5_block3_1_relu",
+    "conv5_block3_2_conv",
+    "conv5_block3_2_relu",
+    "conv5_block3_3_conv",
+    "conv5_block3_add",
+    "conv5_block3_out"
+  ],
+  "fine_tuning_variable_devices": [
+    "/job:localhost/replica:0/task:0/device:GPU:0"
+  ]
+}

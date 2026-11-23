@@ -1,0 +1,91 @@
+Verified GPU matrix operation on /job:localhost/replica:0/task:0/device:GPU:0
+Starting head: GPU=/GPU:0, examples/epoch=34000, steps/epoch=2125, batch=16, max_epochs=8
+Epoch 1/8
+
+Epoch 1: val_loss improved from inf to 0.11692, saving model to D:\projects\final project DA 1st sem\model_output\retrained_balanced_2000_gpu\head_best.weights.h5
+2125/2125 - 151s - loss: 0.3425 - accuracy: 0.8855 - val_loss: 0.1169 - val_accuracy: 0.9592 - lr: 0.0010 - 151s/epoch - 71ms/step
+Epoch 2/8
+
+Epoch 2: val_loss did not improve from 0.11692
+2125/2125 - 147s - loss: 0.1823 - accuracy: 0.9369 - val_loss: 0.1191 - val_accuracy: 0.9639 - lr: 0.0010 - 147s/epoch - 69ms/step
+Epoch 3/8
+
+Epoch 3: val_loss improved from 0.11692 to 0.08925, saving model to D:\projects\final project DA 1st sem\model_output\retrained_balanced_2000_gpu\head_best.weights.h5
+2125/2125 - 147s - loss: 0.1495 - accuracy: 0.9489 - val_loss: 0.0892 - val_accuracy: 0.9717 - lr: 0.0010 - 147s/epoch - 69ms/step
+Epoch 4/8
+
+Epoch 4: val_loss did not improve from 0.08925
+2125/2125 - 146s - loss: 0.1340 - accuracy: 0.9553 - val_loss: 0.0984 - val_accuracy: 0.9761 - lr: 0.0010 - 146s/epoch - 69ms/step
+Epoch 5/8
+
+Epoch 5: val_loss did not improve from 0.08925
+
+Epoch 5: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+2125/2125 - 146s - loss: 0.1258 - accuracy: 0.9569 - val_loss: 0.1070 - val_accuracy: 0.9730 - lr: 0.0010 - 146s/epoch - 69ms/step
+Epoch 6/8
+
+Epoch 6: val_loss improved from 0.08925 to 0.07827, saving model to D:\projects\final project DA 1st sem\model_output\retrained_balanced_2000_gpu\head_best.weights.h5
+2125/2125 - 145s - loss: 0.0815 - accuracy: 0.9717 - val_loss: 0.0783 - val_accuracy: 0.9793 - lr: 5.0000e-04 - 145s/epoch - 68ms/step
+Epoch 7/8
+
+Epoch 7: val_loss improved from 0.07827 to 0.07753, saving model to D:\projects\final project DA 1st sem\model_output\retrained_balanced_2000_gpu\head_best.weights.h5
+2125/2125 - 147s - loss: 0.0700 - accuracy: 0.9745 - val_loss: 0.0775 - val_accuracy: 0.9789 - lr: 5.0000e-04 - 147s/epoch - 69ms/step
+Epoch 8/8
+
+Epoch 8: val_loss improved from 0.07753 to 0.07711, saving model to D:\projects\final project DA 1st sem\model_output\retrained_balanced_2000_gpu\head_best.weights.h5
+2125/2125 - 149s - loss: 0.0650 - accuracy: 0.9778 - val_loss: 0.0771 - val_accuracy: 0.9821 - lr: 5.0000e-04 - 149s/epoch - 70ms/step
+Finished head in 19.6 minutes.
+Starting finetune: GPU=/GPU:0, examples/epoch=34000, steps/epoch=4250, batch=8, max_epochs=10
+Epoch 1/10
+WARNING:tensorflow:Your input ran out of data; interrupting training. Make sure that your dataset or generator can generate at least `steps_per_epoch * epochs` batches (in this case, 42500 batches). You may need to use the repeat() function when building your dataset.
+
+Epoch 1: val_loss improved from inf to 0.05461, saving model to D:\projects\final project DA 1st sem\model_output\retrained_balanced_2000_gpu\finetune_best.weights.h5
+4250/4250 - 193s - loss: 0.0491 - accuracy: 0.9832 - val_loss: 0.0546 - val_accuracy: 0.9855 - lr: 1.0000e-05 - 193s/epoch - 45ms/step
+Finished finetune in 3.2 minutes.
+Selected stage: ResNet50 conv5_x fine-tuned validation: {'loss': 0.05461081117391586, 'accuracy': 0.9854929447174072}
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 53). These functions will not be directly callable after loading.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Training and held-out evaluation finished.
+{
+  "selected_stage": "ResNet50 conv5_x fine-tuned",
+  "validation_loss": 0.05461081117391586,
+  "validation_accuracy": 0.9854929447174072,
+  "combined_test_examples": 6572,
+  "combined_17_way_accuracy": 0.995739500912964,
+  "end_to_end_accuracy_after_gate": 0.995739500912964,
+  "leaf_test_examples": 2647,
+  "nonleaf_test_examples": 3925,
+  "forced_16_disease_class_accuracy_on_leaf_test": 0.9897997733282962,
+  "system_leaf_correct_and_accepted_rate": 0.9897997733282962,
+  "test_macro_precision_17_way": 0.9914636773956422,
+  "test_macro_recall_17_way": 0.9888970989307166,
+  "test_macro_f1_17_way": 0.9901141125456002,
+  "invalid_image_gate": {
+    "positive_definition": "supported crop leaf accepted by the gate",
+    "negative_definition": "non-leaf input correctly rejected by the gate",
+    "TP_leaf_accepted": 2647,
+    "FN_leaf_rejected": 0,
+    "FP_nonleaf_accepted": 1,
+    "TN_nonleaf_rejected": 3924,
+    "leaf_acceptance_recall": 1.0,
+    "nonleaf_rejection_specificity": 0.9997452229299363,
+    "gate_precision_for_accepted_leaf": 0.9996223564954683,
+    "gate_f1": 0.9998111425873466,
+    "gate_balanced_accuracy": 0.9998726114649681,
+    "gate_confusion_matrix_labels": [
+      "not supported leaf",
+      "supported leaf"
+    ],
+    "gate_confusion_matrix": [
+      [
+        3924,
+        1
+      ],
+      [
+        0,
+        2647
+      ]
+    ]
+  }
+}
+Artifacts: D:\projects\final project DA 1st sem\model_output\retrained_balanced_2000_gpu

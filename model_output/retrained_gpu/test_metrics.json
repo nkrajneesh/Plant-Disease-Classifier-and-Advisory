@@ -1,0 +1,42 @@
+{
+  "selected_stage": "ResNet50 conv5_x fine-tuned",
+  "validation_loss": 0.056150875985622406,
+  "validation_accuracy": 0.9808211922645569,
+  "combined_test_examples": 6572,
+  "combined_17_way_accuracy": 0.992696287279367,
+  "end_to_end_accuracy_after_gate": 0.992696287279367,
+  "leaf_test_examples": 2647,
+  "nonleaf_test_examples": 3925,
+  "forced_16_disease_class_accuracy_on_leaf_test": 0.9822440498677748,
+  "system_leaf_correct_and_accepted_rate": 0.9822440498677748,
+  "test_macro_precision_17_way": 0.9839296379320897,
+  "test_macro_recall_17_way": 0.9845333853485059,
+  "test_macro_f1_17_way": 0.9840571789312006,
+  "invalid_image_gate": {
+    "positive_definition": "supported crop leaf accepted by the gate",
+    "negative_definition": "non-leaf input correctly rejected by the gate",
+    "TP_leaf_accepted": 2647,
+    "FN_leaf_rejected": 0,
+    "FP_nonleaf_accepted": 1,
+    "TN_nonleaf_rejected": 3924,
+    "leaf_acceptance_recall": 1.0,
+    "nonleaf_rejection_specificity": 0.9997452229299363,
+    "gate_precision_for_accepted_leaf": 0.9996223564954683,
+    "gate_f1": 0.9998111425873466,
+    "gate_balanced_accuracy": 0.9998726114649681,
+    "gate_confusion_matrix_labels": [
+      "not supported leaf",
+      "supported leaf"
+    ],
+    "gate_confusion_matrix": [
+      [
+        3924,
+        1
+      ],
+      [
+        0,
+        2647
+      ]
+    ]
+  }
+}

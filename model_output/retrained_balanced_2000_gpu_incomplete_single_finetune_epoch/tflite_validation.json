@@ -1,0 +1,16 @@
+{
+  "input_shape": [
+    1,
+    224,
+    224,
+    3
+  ],
+  "output_shape": [
+    1,
+    17
+  ],
+  "keras_top_label": "Apple___Apple_scab",
+  "tflite_top_label": "Apple___Apple_scab",
+  "max_abs_score_difference": 4.669069312512875e-06,
+  "file_bytes": 48092660
+}

@@ -1,0 +1,33 @@
+{
+  "source_image": "D:\\projects\\final project DA 1st sem\\raw images\\Tomato___Early_blight\\0012b9d2-2130-4a06-a834-b1f3af34f57e___RS_Erly.B 8389.JPG",
+  "class": "Tomato___Early_blight",
+  "split": "train",
+  "raw_size_px": [
+    256,
+    256
+  ],
+  "rgb_channels": 3,
+  "resized_size_px": [
+    224,
+    224
+  ],
+  "resize_interpolation": "bilinear",
+  "normalization": "RGB to BGR; subtract [103.939, 116.779, 123.68]; no division by 255",
+  "normalized_tensor_shape": [
+    224,
+    224,
+    3
+  ],
+  "normalized_tensor_dtype": "float32",
+  "normalized_tensor_min": -120.68000030517578,
+  "normalized_tensor_max": 112.06099700927734,
+  "normalized_tensor_mean": -16.938217163085938,
+  "normalized_tensor_file": "03_resnet_normalized_tensor.npy",
+  "display_note": "The normalized PNG uses a +128 visualization offset and is not model input. The .npy file is the exact normalized tensor.",
+  "not_applied": [
+    "background removal / segmentation",
+    "grayscale conversion",
+    "Gaussian blur",
+    "thresholding"
+  ]
+}
