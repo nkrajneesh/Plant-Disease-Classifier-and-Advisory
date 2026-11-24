@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Crop Disease Detection
 
 This project contains a 16-class crop-leaf classifier, a separate invalid-image rejection branch, and an Android demonstration app. The research-style machine-learning report follows the section order used by Mohanty et al. (2016), while describing this project's own data, methods, and measured results.
@@ -38,3 +39,7 @@ The individual preprocessing outputs are under `preprocessed/preprocessing_steps
 ## GitHub contents
 
 The root `.gitignore` excludes local datasets, generated balanced image folders, Python environments, training checkpoints, cached features, report-render previews, and the root APK. These files remain on the computer but are not part of the GitHub upload. The Flutter model asset (`crop_disease_app/assets/crop_disease_resnet50.tflite`) is retained so the app can be built from the repository. To retrain, obtain the source leaf dataset and Imagenette data separately and place them in the ignored folders described by the training scripts.
+=======
+# Plant-Disease-Classifier-and-Advisory
+Deep Learning-based Plant Disease Classification using TensorFlow and CNN architectures. Classifies 17 disease and healthy-leaf categories across Apple, Corn, Potato, and Tomato, with a target of 99.5% test accuracy.
+>>>>>>> 353071dc7c6584ac932bdafc5171f23356c75b9e
